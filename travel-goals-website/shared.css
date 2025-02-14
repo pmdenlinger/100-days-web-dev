@@ -9,6 +9,10 @@ ul {
     padding: 0;
 }
 
+#nav-items {
+    display: column;
+}
+
 #page-logo a {
     padding: 10px;
     font-family: "Oleo Script", sans-serif;
