@@ -1,8 +1,5 @@
-#container {
-    
-    padding: 10px;
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+#hero {
+  height: 800px;
+  background-image: url("images/places/ocean.jpg");
+  background-position: center;
+  background-size: cover; 
