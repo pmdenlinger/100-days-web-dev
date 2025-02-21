@@ -135,6 +135,10 @@ main h1 {
   font-size: 100%;
 }
 
+.food-item h2 {
+    margin: 0 0 1rem 0;
+}
+
 .btn {
   background-color: rgb(228, 157, 44);
   color: white;
