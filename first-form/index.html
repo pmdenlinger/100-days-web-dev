@@ -22,12 +22,12 @@
 
             <li>
               <label for="useremail" id="useremail">Your email address</label>
-              <input type="email" name="user-email" id="useremail" />
+              <input type="email" name="user-email" id="useremail" required/>
             </li>
 
             <li>
               <label for="user-password" id="userpassword">Your password</label>
-              <input type="password" name="user-password" id="userpassword" />
+              <input type="password" name="user-password" id="userpassword" required minlength="7"/>
             </li>
           </ul>
         </section>
@@ -37,7 +37,7 @@
           <ul>
             <li>
               <label for="user-age" id="userage">Your age</label>
-              <input type="number" name="user-age" id="userage" />
+              <input type="number" name="user-age" id="userage" required min="18" max="100"/>
             </li>
             <li>
               <label for="user-birthdate" id="userbirthdate" />Your birthdate</label>
