@@ -12,4 +12,5 @@ let job1 = {
 
 
 alert(hobbies);
+alert(job1.salary);
 
