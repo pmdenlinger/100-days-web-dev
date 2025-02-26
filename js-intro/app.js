@@ -9,11 +9,11 @@ let job1 = {
   salary: 50000,
 };
 
-let adultYears;
+let totalAdultYears;
 
 function calculateAdultYears() {
-  adultYears = age - 18;
+  return age - 18;
 }
 
-calculateAdultYears();
-alert(adultYears);
+totalAdultYears = calculateAdultYears();
+alert(totalAdultYears);
