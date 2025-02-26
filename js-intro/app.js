@@ -11,9 +11,9 @@ let job1 = {
 
 let totalAdultYears;
 
-function calculateAdultYears() {
-  return age - 18;
+function calculateAdultYears(userAge) {
+  return userAge - 18;
 }
 
-totalAdultYears = calculateAdultYears();
+totalAdultYears = calculateAdultYears(age);
 alert(totalAdultYears);
