@@ -21,15 +21,14 @@
 const removeParagraphBtn = document.querySelector(".remove-paragraph-btn");
 const addBackgroundColorBtn = document.getElementBy("add-background-color-btn");
 
-function removeParagraph(){
-
+function removeParagraph() {
+  console.dir(removeParagraphBtn);
 }
 
-function changeBackgroundColor(){
-
+function changeBackgroundColor(event) {
+  console.dir(event.target);
 }
 
 removeParagraphBtn.addEventListener("click", removeParagraph);
 
 addBackgroundColorBtn.addEventListener("click", changeBackgroundColor);
-
