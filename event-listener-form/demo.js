@@ -7,6 +7,11 @@ function updateRemainingCharacters(event) {
 
     let remainingCharacters = 60 - enteredTextLength;
     remainingCharsElement.textContent = remainingCharacters;
+
+    if (remainingCharacters <= 10) {
+        remainingCharsElement.classList.add("warning");
+        productNameInputElement.classList.add("warning");
+    }
 }
 
 productNameInputElement.addEventListener("input", updateRemainingCharacters);

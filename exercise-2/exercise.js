@@ -32,7 +32,7 @@ function removeParagraph() {
 }
 
 function changeBackgroundColor(event) {
-  console.dir(event.target);
+  firstParagraphElement.style
 }
 
 removeParagraphBtn.addEventListener("click", removeParagraph);
