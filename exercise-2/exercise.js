@@ -12,17 +12,23 @@
 //    - Select BOTH paragraphs by drilling into the document and "navigating" to the
 //      mentioned elements
 //    - If you struggle with DOM drilling, use "ids" instead but watch the solution!
+
+const firstParagraphElement = document.body.children[2].children[1];
+console.log(firstParagraphElement);
+
+const thirdParagraphElement = document.body.children[2].children[3];
+console.log(thirdParagraphElement);
+
 // 4) Change the functions from (2) such that:
 //    - The first button removes the third paragraph (i.e. the <p> prior to it)
 //    - The second button changes the background color of the first paragraph to blue
-// 5) Solve (4) both by changing the "inline styles" as well as by adding CSS classes
-//    Note: You'll have to add those classes to the styles.css file first!
-
 const removeParagraphBtn = document.querySelector(".remove-paragraph-btn");
-const addBackgroundColorBtn = document.getElementBy("add-background-color-btn");
+const addBackgroundColorBtn = document.getElementById(
+  "add-background-color-btn"
+);
 
 function removeParagraph() {
-  console.dir(removeParagraphBtn);
+  thirdParagraphElement.remove();
 }
 
 function changeBackgroundColor(event) {
@@ -32,3 +38,20 @@ function changeBackgroundColor(event) {
 removeParagraphBtn.addEventListener("click", removeParagraph);
 
 addBackgroundColorBtn.addEventListener("click", changeBackgroundColor);
+// 5) Solve (4) both by changing the "inline styles" as well as by adding CSS classes
+//    Note: You'll have to add those classes to the styles.css file first!
+
+// const removeParagraphBtn = document.querySelector(".remove-paragraph-btn");
+// const addBackgroundColorBtn = document.getElementBy("add-background-color-btn");
+
+// function removeParagraph() {
+//   console.dir(removeParagraphBtn);
+// }
+
+// function changeBackgroundColor(event) {
+//   console.dir(event.target);
+// }
+
+// removeParagraphBtn.addEventListener("click", removeParagraph);
+
+// addBackgroundColorBtn.addEventListener("click", changeBackgroundColor);
