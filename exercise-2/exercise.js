@@ -18,3 +18,18 @@
 // 5) Solve (4) both by changing the "inline styles" as well as by adding CSS classes
 //    Note: You'll have to add those classes to the styles.css file first!
 
+const removeParagraphBtn = document.querySelector(".remove-paragraph-btn");
+const addBackgroundColorBtn = document.getElementBy("add-background-color-btn");
+
+function removeParagraph(){
+
+}
+
+function changeBackgroundColor(){
+
+}
+
+removeParagraphBtn.addEventListener("click", removeParagraph);
+
+addBackgroundColorBtn.addEventListener("click", changeBackgroundColor);
+
