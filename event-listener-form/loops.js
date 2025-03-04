@@ -12,13 +12,18 @@ for (const user of users) {
 // For in loop used on objects
 
 const loggedInUser = {
-  name: "Max", 
+  name: "Max",
   age: 32,
-  isAdmin: true
+  isAdmin: true,
 };
 
 // Outputs propertyName only
 
 for (const propertyName in loggedInUser) {
   console.log(propertyName);
+}
+
+// To output key values
+for (const propertyName in loggedInUser) {
+  console.log(loggedInUser[propertyName]);
 }
